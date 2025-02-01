@@ -5,18 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Living Lab</title>
+  <!-- fontawsome  Cdn -->
   <!-- daisyui -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
 
-  </style>
 </head>
 
 <body>
   <header class="bg-[#EFEBE3]">
-    <div class="navbar bg-base-100 ">
-      <div class="navbar-start">
+    <div class="navbar w-8/12 mx-auto ">
+
+      <div class="navbar-start ">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -30,7 +30,9 @@
             <li><a>Contact us</a></li>
           </ul>
         </div>
-        <img src="c2-assets/logo-header.png" alt="" srcset="">
+        <div class="max-sm:hidden">
+          <img class="" src="c2-assets/logo-header.png" alt="" srcset="">
+        </div>
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
@@ -40,10 +42,16 @@
         </ul>
       </div>
       <div class="navbar-end">
-        <a href="btn">Login</a>
-        <a class="btn bg-green-500">Register</a>
+        <div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <a class="border  border-green-600  rounded-xl w-20 mx-auto h-8 me-5 ps-4  max-sm:hidden
+         " href="">Login</a>
+        <a class="btn bg-green-500 max-sm:hidden">Register</a>
       </div>
     </div>
+
+
     <!-- banner Section -->
     <h1 class="font-bold text-6xl text-center w-4xl h py-5">Freshness <span class="text-green-600 ">You Can <br>
         Count</span> On, Prices You’ll Love!</h1>
