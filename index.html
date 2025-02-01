@@ -5,19 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Living Lab</title>
+  <!-- google font cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
   <!-- fontawsome  Cdn -->
   <!-- daisyui -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .sora-font {
+      font-family: "Sora", serif;
+
+    }
+  </style>
 
 </head>
 
-<body>
+<body class="sora-font">
   <header class="bg-[#EFEBE3]">
-    <div class="navbar w-8/12  mx-auto ">
+    <div class="navbar lg:w-8/12  mx-auto max-sm:border-b-4 max-sm:border-green-950 ">
       <!-- mobile header logo1 -->
-      <div class="sm:hidden  max-sm:w-24
-       max-sm:-ms-12">
+      <div class="sm:hidden  max-sm:w-52 max-sm:ms-3
+       ">
         <img class="" src="c2-assets/Group.png" alt="" srcset="">
       </div>
 
@@ -27,7 +37,7 @@
           <div class="sm:hidden  ">
             <img class="max-sm:ms-60" src="c2-assets/heroicons-solid_bars-3@2x.png" alt="" srcset="">
           </div>
-          <div class=" max-sm:hidden  h-7 bold" tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <div class=" max-sm:hidden sm:hidden  h-7 bold" tabindex="0" role="button" class="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
@@ -54,7 +64,7 @@
         <div>
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
-        <a class="border  border-green-600  rounded-xl w-20 mx-auto h-8 me-5 ps-4  max-sm:hidden
+        <a class="border  border-green-600  rounded-xl w-20 mx-auto h-8 me-5 ps-4 pt-1  max-sm:hidden
          " href="">Login</a>
         <a class="btn bg-green-500 max-sm:hidden">Register</a>
       </div>
@@ -79,7 +89,7 @@
   <main>
     <!-- services section -->
     <section class="mx-auto">
-      <h3 class="text-green-500 text-4xl lg:mt-28 ms-32">Services</h3>
+      <h3 class="text-green-500 text-4xl lg:mt-28 ms-32 max-sm:ms-2 max-sm:mt-8">Services</h3>
 
       <div class="py-10 grid lg:grid-cols-3 w-10/12 mx-auto gap-4">
         <div class="max-w-md h-96 rounded-3xl bg-[#EFEBE3] ">
@@ -124,7 +134,7 @@
 
     <!-- product Section -->
     <section class="bg-[#EFEBE3] py-10   ">
-      <h3 class="text-3xl font-bold lg:ms-32 mt-10 py-5 ">Popular Products</h3>
+      <h3 class="text-3xl font-bold lg:ms-32 mt-10 py-5 text-green-600 max-sm:ms-4 ">Popular Products</h3>
 
       <div class="py-5 grid lg:grid-cols-2  lg:mx-32  ">
         <div class="max-h-96 max-w-[424px] rounded-3xl bg-gradient-to-b from-green-500  to-white ">
